@@ -4,6 +4,9 @@ services:
     build: 
       context: ./database
       dockerfile: Dockerfile
+    environment:
+      - DB_CHARSET=utf8mb4
+      - TZ=Asia/Seoul
     ports:
       - 3307:3306
     volumes:
