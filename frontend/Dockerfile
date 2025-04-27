@@ -1,4 +1,4 @@
-FROM node:alpine as build
+FROM node:alpine AS build
 WORKDIR /frontend
 COPY package.json /frontend
 RUN npm install --silent
